@@ -9,7 +9,7 @@
 body{
   color:#222;
   background:#fff;
-  overflow-x:hidden; /* FIX penting biar tidak geser kanan */
+  overflow-x:hidden;
 }
 
 /* ================= CONTAINER ================= */
@@ -104,15 +104,17 @@ body{
 
 .hero-overlay{
   position:absolute;
+  top:0;
+  left:0;
   width:100%;
   height:100%;
   background:rgba(0,0,0,0.6);
-  top:0;
-  left:0;
+  z-index:1;
 }
 
 .hero-content{
   position:relative;
+  z-index:2;
   color:#fff;
   padding:0 15px;
 }
@@ -122,11 +124,61 @@ body{
   margin-bottom:10px;
 }
 
-.hero p{
-  font-size:clamp(14px, 3.5vw, 20px);
-  margin-bottom:25px;
+.hero h2{
+  font-size:clamp(18px, 4vw, 28px);
+  margin-bottom:10px;
 }
 
+.hero p{
+  font-size:clamp(14px, 3.5vw, 20px);
+  margin-bottom:20px;
+}
+
+/* TAGLINE & EVENT */
+.tagline{
+  margin:10px 0 15px;
+  font-size:18px;
+  color:#fff;
+}
+
+.event-title{
+  color:#ffc107;
+  font-weight:600;
+  margin-bottom:20px;
+  font-size:16px;
+}
+
+/* ================= COUNTDOWN ================= */
+.hero-countdown{
+  margin:20px 0;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.time-box{
+  width:90px;
+  padding:15px;
+  border-radius:12px;
+  background:rgba(255,255,255,.15);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.2);
+}
+
+.time-box span{
+  display:block;
+  font-size:30px;
+  font-weight:700;
+  color:#fff;
+}
+
+.time-box small{
+  color:#ddd;
+  font-size:13px;
+}
+
+/* BUTTON */
 .hero-btn{
   display:flex;
   justify-content:center;
@@ -134,7 +186,6 @@ body{
   flex-wrap:wrap;
 }
 
-/* BUTTON */
 .btn{
   padding:12px 25px;
   background:#ffc107;
@@ -218,16 +269,6 @@ body{
   font-size:12px;
   padding:5px 10px;
   border-radius:20px;
-  backdrop-filter:blur(5px);
-}
-
-.card h3{
-  margin:15px 0 10px;
-}
-
-.card p{
-  padding:0 15px 20px;
-  color:#555;
 }
 
 /* ================= GALERI ================= */
@@ -274,19 +315,13 @@ footer{
 }
 
 /* ================= RESPONSIVE ================= */
-
-/* TABLET */
 @media(max-width:992px){
-  .grid-3{
-    grid-template-columns:repeat(2,1fr);
-  }
-
+  .grid-3,
   .grid-gallery{
     grid-template-columns:repeat(2,1fr);
   }
 }
 
-/* MOBILE */
 @media(max-width:600px){
 
   .menu{
@@ -313,5 +348,18 @@ footer{
 
   .kegiatan h2{
     font-size:24px;
+  }
+
+  .hero-countdown{
+    gap:10px;
+  }
+
+  .time-box{
+    width:70px;
+    padding:12px;
+  }
+
+  .time-box span{
+    font-size:22px;
   }
 }

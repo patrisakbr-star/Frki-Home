@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Frki Home</title>
+
+  <!-- SEO (tambahan penting) -->
+  <meta name="description" content="Website resmi FRKI - Forum Remaja Kebon Indah">
+  <meta name="keywords" content="FRKI, pemuda, kebon indah, organisasi remaja">
+  <meta name="author" content="FRKI">
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -23,15 +29,13 @@
       <span>FRKI</span>
     </div>
 
-    <div class="nav-center">
-      <ul class="menu">
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#tentang">Tentang</a></li>
-        <li><a href="#kegiatan">Kegiatan</a></li>
-        <li><a href="#galeri">Galeri</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-    </div>
+    <ul class="menu">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kegiatan">Kegiatan</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
 
     <a href="https://instagram.com/frki_003" target="_blank" class="ig-btn">
       Instagram
@@ -45,14 +49,48 @@
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
+
     <h1>(FRKI) REBORN</h1>
     <h2>FORUM REMAJA KEBON INDAH</h2>
+
     <p>Bersatu • Berkarya • Renyahhh</p>
 
+    <!-- JUDUL COUNTDOWN -->
+    <div class="event-title">
+      Menuju HUT RI Ke-81
+    </div>
+
+    <!-- COUNTDOWN -->
+    <div class="hero-countdown">
+
+      <div class="time-box">
+        <span id="days">00</span>
+        <small>Hari</small>
+      </div>
+
+      <div class="time-box">
+        <span id="hours">00</span>
+        <small>Jam</small>
+      </div>
+
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <small>Menit</small>
+      </div>
+
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <small>Detik</small>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
     <div class="hero-btn">
       <a href="#tentang" class="btn">Tentang Kami</a>
       <a href="#kegiatan" class="btn outline">Kegiatan</a>
     </div>
+
   </div>
 </section>
 
@@ -76,7 +114,7 @@
 
       <div class="card">
         <div class="img-box">
-          <img src="asset/bendera.JPG">
+          <img src="asset/bendera.JPG" alt="Pawai Bendera FRKI">
           <span class="badge">📅 17 Agustus 2025</span>
         </div>
         <h3>PAWAI BENDERA PANJANG JASA</h3>
@@ -85,7 +123,7 @@
 
       <div class="card">
         <div class="img-box">
-          <img src="asset/bukber.jpg">
+          <img src="asset/bukber.jpg" alt="Bukber FRKI">
           <span class="badge">📅 8 Maret 2025</span>
         </div>
         <h3>BUKBER PANJANG</h3>
@@ -94,7 +132,7 @@
 
       <div class="card">
         <div class="img-box">
-          <img src="asset/fun.webp">
+          <img src="asset/fun.webp" alt="Fun Minisoccer FRKI">
           <span class="badge">📅 2 Juni 2024</span>
         </div>
         <h3>FUN MINISOCCER FRKI</h3>
@@ -111,12 +149,12 @@
     <h2>Galeri Kegiatan</h2>
 
     <div class="grid-gallery">
-      <img src="asset/galeri1.jpg">
-      <img src="asset/galeri2.jpg">
-      <img src="asset/galeri3.jpg">
-      <img src="asset/galeri4.jpg">
-      <img src="asset/galeri7.jpeg">
-      <img src="asset/galeri5.jpeg">
+      <img src="asset/galeri1.jpg" alt="Galeri FRKI 1">
+      <img src="asset/galeri2.jpg" alt="Galeri FRKI 2">
+      <img src="asset/galeri3.jpg" alt="Galeri FRKI 3">
+      <img src="asset/galeri4.jpg" alt="Galeri FRKI 4">
+      <img src="asset/galeri7.jpeg" alt="Galeri FRKI 5">
+      <img src="asset/galeri5.jpeg" alt="Galeri FRKI 6">
     </div>
   </div>
 </section>
@@ -124,6 +162,7 @@
 <!-- FOOTER -->
 <footer id="kontak">
   <div class="container footer">
+
     <div>
       <h3>Forum Remaja Kebon Indah</h3>
       <p>Wadah pemuda untuk berkembang dan berkarya.</p>
@@ -138,15 +177,17 @@
     <div>
       <h4>Sosial Media</h4>
       <p>@frki_003</p>
-      <p>WA: 0856-9457-7695</p>
     </div>
-    
+
   </div>
 
   <div class="copyright">
     © 2026 frki003
   </div>
 </footer>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
 
 </body>
 </html>

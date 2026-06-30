@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- LOGO OUTLINE FOOTER -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <title>Frki Home</title>
 
@@ -35,6 +40,7 @@
       <li><a href="#kegiatan">Kegiatan</a></li>
       <li><a href="#galeri">Galeri</a></li>
       <li><a href="#kontak">Kontak</a></li>
+      <li><a href="#video">Video</a></li>
     </ul>
 
     <a href="https://instagram.com/frki_003" target="_blank" class="ig-btn">
@@ -106,13 +112,14 @@
 </section>
 
 <!-- KEGIATAN -->
+ 
 <section id="kegiatan" class="kegiatan">
   <div class="container">
     <h2>Kegiatan Terbaru</h2>
 
     <div class="grid-3">
 
-      <div class="card">
+      <div class="card scroll">
         <div class="img-box">
           <img src="asset/bendera.JPG" alt="Pawai Bendera FRKI">
           <span class="badge">📅 17 Agustus 2025</span>
@@ -159,30 +166,109 @@
   </div>
 </section>
 
+<!-- VIDEO DOKUMENTASI -->
+
+
+<section id="video" class="video-section">
+  <div class="container">
+    <h2>Video Dokumentasi Terbaru</h2>
+    <p class="video-desc">
+      Dokumentasi kegiatan Forum Remaja Kebon Indah.
+    </p>
+
+    <div class="video-grid">
+
+      <div class="video-box">
+        <video class="video-item" muted autoplay loop playsinline>
+          <source src="asset/video/kegiatan1.mp4" type="video/mp4">
+        </video>
+        <p>Pawai Obor 1 Muharram</p>
+      </div>
+
+      <div class="video-box">
+        <video class="video-item" muted autoplay loop playsinline>
+          <source src="asset/video/kegiatan2.mp4" type="video/mp4">
+        </video>
+        <p>Bukber Panjang FRKI</p>
+      </div>
+
+      <div class="video-box">
+    <video class="video-item" muted autoplay loop playsinline>
+        <source src="asset/video/kegiatan3.mp4" type="video/mp4">
+    </video>
+    <p>17 Agustus 2025</p>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- POPUP VIDEO -->
+<div id="videoModal" class="video-modal">
+
+  <span class="video-close">&times;</span>
+
+  <video id="popupVideo" controls>
+    <source src="" type="video/mp4">
+  </video>
+
+</div>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+
+</div>
+
 <!-- FOOTER -->
 <footer id="kontak">
   <div class="container footer">
 
-    <div>
+    <div class="footer-box">
       <h3>Forum Remaja Kebon Indah</h3>
       <p>Wadah pemuda untuk berkembang dan berkarya.</p>
     </div>
 
-    <div>
-      <h4>Kontak</h4>
-      <p>Email: frki_003@gmail.com</p>
-      <p>WA: 0856-9457-7695</p>
-    </div>
+    <div class="footer-box footer-contact">
 
+  <h4>CONTACT US</h4>
+
+  <div class="contact-item">
+    <i class="fa-regular fa-envelope"></i>
     <div>
-      <h4>Sosial Media</h4>
-      <p>@frki_003</p>
+      <span>Email</span>
+      <p>frki_003@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <i class="fa-brands fa-whatsapp"></i>
+    <div>
+      <span>WhatsApp</span>
+      <p>0856-9457-7695</p>
+    </div>
+  </div>
+
+</div>
+
+    <div class="footer-box">
+      <h4>Lokasi Sekretariat</h4>
+
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d247.89572570199311!2d106.627844562925!3d-6.219929043377556!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1782846318042!5m2!1sid!2sid"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+
     </div>
 
   </div>
 
   <div class="copyright">
-    © 2026 frki003
+    © Copyright 2026 frki003
   </div>
 </footer>
 

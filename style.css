@@ -565,3 +565,23 @@ footer{
   }
 
 }
+
+
+/* ================= VIDEO DIHAPUS ================= */
+
+/*
+  Pengaman jika masih ada elemen video
+  yang tertinggal di HTML.
+*/
+
+.video-section,
+.video-grid,
+.video-box,
+.video-item,
+.video-modal,
+.video-close,
+#video,
+#videoModal,
+#popupVideo{
+  display:none !important;
+}

@@ -1,4 +1,5 @@
 /* ================= RESET ================= */
+
 *{
   margin:0;
   padding:0;
@@ -25,14 +26,18 @@ body{
   overflow-x:hidden;
 }
 
+
 /* ================= CONTAINER ================= */
+
 .container{
   width:90%;
   max-width:1200px;
   margin:auto;
 }
 
+
 /* ================= NAVBAR ================= */
+
 .navbar{
   position:fixed;
   width:100%;
@@ -49,7 +54,9 @@ body{
   justify-content:space-between;
 }
 
-/* LOGO */
+
+/* ================= LOGO ================= */
+
 .logo{
   display:flex;
   align-items:center;
@@ -74,7 +81,9 @@ body{
   font-weight:700;
 }
 
-/* MENU */
+
+/* ================= MENU ================= */
+
 .menu{
   list-style:none;
   display:flex;
@@ -92,9 +101,16 @@ body{
   color:#ffc107;
 }
 
-/* IG BUTTON */
+
+/* ================= INSTAGRAM BUTTON ================= */
+
 .ig-btn{
-  background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+  background:linear-gradient(
+    45deg,
+    #f9ce34,
+    #ee2a7b,
+    #6228d7
+  );
   color:#fff;
   padding:8px 14px;
   border-radius:20px;
@@ -104,7 +120,9 @@ body{
   white-space:nowrap;
 }
 
+
 /* ================= HERO ================= */
+
 .hero{
   height:100vh;
   background:url('asset/banner.JPG') center/cover no-repeat;
@@ -154,6 +172,7 @@ body{
 }
 
 @keyframes fadeUp{
+
   from{
     opacity:0;
     transform:translateY(20px);
@@ -163,9 +182,12 @@ body{
     opacity:1;
     transform:translateY(0);
   }
+
 }
 
+
 /* ================= TAGLINE & EVENT ================= */
+
 .tagline{
   margin:10px 0 15px;
   font-size:18px;
@@ -179,7 +201,9 @@ body{
   font-size:16px;
 }
 
+
 /* ================= COUNTDOWN ================= */
+
 .hero-countdown{
   margin:20px 0;
   display:flex;
@@ -209,7 +233,9 @@ body{
   font-size:13px;
 }
 
+
 /* ================= BUTTON ================= */
+
 .hero-btn{
   display:flex;
   justify-content:center;
@@ -242,14 +268,18 @@ body{
   color:#000;
 }
 
+
 /* ================= ABOUT ================= */
+
 .about{
   padding:80px 0;
   background:#f5f5f5;
   text-align:center;
 }
 
+
 /* ================= KEGIATAN ================= */
+
 .kegiatan{
   padding:80px 0;
   text-align:center;
@@ -266,7 +296,9 @@ body{
   gap:25px;
 }
 
+
 /* ================= CARD ================= */
+
 .card{
   background:#fff;
   padding:22px;
@@ -303,11 +335,17 @@ body{
   border-radius:20px;
 }
 
+
 /* ================= GALERI ================= */
+
 .galeri{
   padding:80px 0;
   background:#f5f5f5;
   text-align:center;
+}
+
+.galeri h2{
+  margin-bottom:40px;
 }
 
 .grid-gallery{
@@ -322,17 +360,16 @@ body{
   object-fit:cover;
   border-radius:12px;
   transition:0.3s;
+  cursor:pointer;
 }
 
 .grid-gallery img:hover{
   transform:scale(1.04);
 }
 
-.galeri h2{
-  margin-bottom:40px;
-}
 
 /* ================= FOOTER ================= */
+
 footer{
   background:#000;
   color:#fff;
@@ -352,36 +389,13 @@ footer{
   font-size:14px;
 }
 
-/* TIAP KOLOM FOOTER */
 .footer-box{
   min-width:0;
 }
 
-/* COPYRIGHT */
-.copyright{
-  text-align:center;
-  padding:15px 0;
-  color:#aaa;
-  font-size:14px;
-}
-
-/* ================= FOOTER MAP ================= */
-.footer-map{
-  background:#fff;
-  padding:8px;
-  border-radius:12px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.25);
-  border:1px solid rgba(0,0,0,0.05);
-}
-
-.footer-map iframe{
-  width:100%;
-  height:180px;
-  border:0;
-  border-radius:8px;
-}
 
 /* ================= FOOTER CONTACT ================= */
+
 .footer-contact h4{
   margin-bottom:15px;
   font-size:16px;
@@ -401,7 +415,6 @@ footer{
   margin-top:3px;
 }
 
-/* TEKS KANAN */
 .contact-item div span{
   display:block;
   font-size:12px;
@@ -417,14 +430,89 @@ footer{
   font-weight:500;
 }
 
-/* HOVER HALUS */
 .contact-item:hover i{
   color:#ffc107;
   transform:scale(1.1);
   transition:0.3s;
 }
 
+
+/* ================= FOOTER MAP ================= */
+
+.footer-map{
+  background:#fff;
+  padding:8px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+.footer-map iframe{
+  width:100%;
+  height:180px;
+  border:0;
+  border-radius:8px;
+}
+
+
+/* ================= COPYRIGHT ================= */
+
+.copyright{
+  text-align:center;
+  padding:15px 0;
+  color:#aaa;
+  font-size:14px;
+}
+
+
+/* ================= LIGHTBOX ================= */
+
+.lightbox{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.lightbox-img{
+  max-width:90%;
+  max-height:85%;
+  border-radius:10px;
+  box-shadow:0 0 20px rgba(255,255,255,.3);
+}
+
+.close{
+  position:absolute;
+  top:25px;
+  right:35px;
+  color:#fff;
+  font-size:40px;
+  cursor:pointer;
+}
+
+
+/* ================= SCROLL ANIMATION ================= */
+
+.scroll-animate{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 0.6s ease;
+}
+
+.scroll-animate.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
 /* ================= RESPONSIVE ================= */
+
 @media(max-width:992px){
 
   .grid-3,
@@ -433,6 +521,7 @@ footer{
   }
 
 }
+
 
 @media(max-width:600px){
 
@@ -475,48 +564,4 @@ footer{
     font-size:22px;
   }
 
-}
-
-/* ================= LIGHTBOX ================= */
-
-.lightbox{
-  display:none;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.9);
-  justify-content:center;
-  align-items:center;
-  z-index:9999;
-}
-
-.lightbox-img{
-  max-width:90%;
-  max-height:85%;
-  border-radius:10px;
-  box-shadow:0 0 20px rgba(255,255,255,.3);
-}
-
-.close{
-  position:absolute;
-  top:25px;
-  right:35px;
-  color:#fff;
-  font-size:40px;
-  cursor:pointer;
-}
-
-/* ================= SCROLL ANIMATION ================= */
-
-.scroll-animate{
-  opacity:0;
-  transform:translateY(40px);
-  transition:all 0.6s ease;
-}
-
-.scroll-animate.show{
-  opacity:1;
-  transform:translateY(0);
 }

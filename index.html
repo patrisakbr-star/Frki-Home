@@ -1,280 +1,491 @@
 <!DOCTYPE html>
+
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
+  <!-- FONT -->
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- LOGO OUTLINE FOOTER -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <title>Frki Home</title>
-
-  <!-- SEO (tambahan penting) -->
-  <meta name="description" content="Website resmi FRKI - Forum Remaja Kebon Indah">
-  <meta name="keywords" content="FRKI, pemuda, kebon indah, organisasi remaja">
-  <meta name="author" content="FRKI">
-
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+  <!-- FONT AWESOME -->
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- SEO -->
+
+<meta name="description"
+     content="Website resmi FRKI - Forum Remaja Kebon Indah">
+
+<meta name="keywords"
+     content="FRKI, Forum Remaja Kebon Indah, pemuda, Kebon Indah, organisasi remaja">
+
+  <meta name="author" content="FRKI">
+
+  <title>FRKI — Forum Remaja Kebon Indah</title>
+
   <!-- CSS -->
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
 <header class="navbar">
+
   <div class="container nav-wrapper">
 
-    <div class="logo">
-      <img src="asset/frki.png" alt="Logo FRKI">
-      <span>FRKI</span>
-    </div>
+<!-- LOGO -->
 
-    <ul class="menu">
-      <li><a href="#">Beranda</a></li>
-      <li><a href="#tentang">Tentang</a></li>
-      <li><a href="#kegiatan">Kegiatan</a></li>
-      <li><a href="#galeri">Galeri</a></li>
-      <li><a href="#kontak">Kontak</a></li>
-      <li><a href="#video">Video</a></li>
-    </ul>
+<div class="logo">
 
-    <a href="https://instagram.com/frki_003" target="_blank" class="ig-btn">
-      Instagram
-    </a>
+  <img
+    src="asset/frki.png"
+    alt="Logo FRKI">
+
+  <span>FRKI</span>
+
+</div>
+
+
+<!-- MENU -->
+
+<ul class="menu">
+
+  <li>
+    <a href="#">Beranda</a>
+  </li>
+
+  <li>
+    <a href="#tentang">Tentang</a>
+  </li>
+
+  <li>
+    <a href="#kegiatan">Kegiatan</a>
+  </li>
+
+  <li>
+    <a href="#galeri">Galeri</a>
+  </li>
+
+  <li>
+    <a href="#kontak">Kontak</a>
+  </li>
+
+</ul>
+
+
+<!-- INSTAGRAM -->
+
+<a
+  href="https://instagram.com/frki_003"
+  target="_blank"
+  rel="noopener"
+  class="ig-btn">
+
+  <i class="fa-brands fa-instagram"></i>
+
+  Instagram
+
+</a>
 
   </div>
+
 </header>
 
-<!-- HERO SECTION -->
+<!-- =====================================================
+     HERO
+===================================================== -->
+
 <section class="hero">
+
+  <!-- BACKGROUND SLIDESHOW -->
+
+  <div class="hero-bg">
+<div
+  class="hero-slide active"
+  style="background-image: url('asset/banner.JPG');">
+</div>
+
+<div
+  class="hero-slide"
+  style="background-image: url('asset/banner2.jpeg');">
+</div>
+
+<div
+  class="hero-slide"
+  style="background-image: url('asset/banner3.jpg');">
+</div>
+
+  </div>
+
+  <!-- OVERLAY -->
+
   <div class="hero-overlay"></div>
+
+  <!-- HERO CONTENT -->
 
   <div class="hero-content">
 
-    <h1>(FRKI) REBORN</h1>
-    <h2>FORUM REMAJA KEBON INDAH</h2>
+<h1>
+  (FRKI) REBORN
+</h1>
 
-    <p>Bersatu • Berkarya • Renyahhh</p>
+<h2>
+  FORUM REMAJA KEBON INDAH
+</h2>
 
-    <!-- JUDUL COUNTDOWN -->
-    <div class="event-title">
-      Menuju HUT RI Ke-81
-    </div>
+<p>
+  Bersatu • Berkarya • Renyahhh
+</p>
 
-    <!-- COUNTDOWN -->
-    <div class="hero-countdown">
 
-      <div class="time-box">
-        <span id="days">00</span>
-        <small>Hari</small>
-      </div>
+<!-- BUTTON -->
 
-      <div class="time-box">
-        <span id="hours">00</span>
-        <small>Jam</small>
-      </div>
+<div class="hero-btn">
 
-      <div class="time-box">
-        <span id="minutes">00</span>
-        <small>Menit</small>
-      </div>
+  <a
+    href="#tentang"
+    class="btn">
 
-      <div class="time-box">
-        <span id="seconds">00</span>
-        <small>Detik</small>
-      </div>
+    Tentang Kami
 
-    </div>
+  </a>
 
-    <!-- BUTTON -->
-    <div class="hero-btn">
-      <a href="#tentang" class="btn">Tentang Kami</a>
-      <a href="#kegiatan" class="btn outline">Kegiatan</a>
-    </div>
+  <a
+    href="#kegiatan"
+    class="btn outline">
+
+    Kegiatan
+
+  </a>
+
+</div>
 
   </div>
+
 </section>
 
-<!-- ABOUT -->
-<section id="tentang" class="about">
+<!-- =====================================================
+     TENTANG KAMI
+===================================================== -->
+
+<section
+  id="tentang"
+  class="about">
+
   <div class="container">
-    <h2>Tentang Kami</h2>
+
+<h2>
+  Tentang Kami
+</h2>
+
+<p>
+  Forum Remaja Kebon Indah (FRKI) merupakan wadah bagi para
+  remaja dan pemuda untuk berkumpul, berkolaborasi, serta
+  berkontribusi positif bagi lingkungan dan masyarakat.
+  FRKI hadir sebagai ruang untuk mempererat kebersamaan,
+  membangun solidaritas, dan mengembangkan potensi generasi
+  muda melalui berbagai kegiatan sosial, olahraga, hiburan,
+  serta kegiatan kemasyarakatan.
+  <br><br>
+
+  Dengan semangat kebersamaan dan gotong royong, kami percaya
+  bahwa pemuda memiliki peran penting dalam menciptakan
+  lingkungan yang lebih aktif, kreatif, dan positif.
+  Melalui setiap kegiatan, FRKI berusaha menjadi tempat bagi
+  generasi muda untuk berkarya, belajar, berorganisasi, dan
+  memberikan manfaat nyata bagi masyarakat.
+  <br><br>
+
+  <strong>
+    Bersama, bergerak, berkarya, dan membangun Kebon Indah
+    yang lebih baik.
+  </strong>
+</p>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     KEGIATAN
+===================================================== -->
+
+<section
+  id="kegiatan"
+  class="kegiatan">
+
+  <div class="container">
+<h2>
+  Kegiatan Terbaru
+</h2>
+<div class="grid-3">
+  <!-- CARD 1 -->
+
+  <div class="card scroll-animate">
+
+    <div class="img-box">
+
+      <img
+        src="asset/krnvl.jpg"
+        alt="Pawai Bendera FRKI">
+
+      <span class="badge">
+        📅 17 Agustus 2026
+      </span>
+
+    </div>
+
+    <h3>
+      KARNAVAL RW 01/07 PANUNGGANGAN BARAT
+    </h3>
+
     <p>
-      Forum Remaja Kebon Indah (FRKI) merupakan wadah bagi para remaja dan pemuda untuk berkumpul, berkolaborasi, serta berkontribusi positif bagi lingkungan dan masyarakat. FRKI hadir sebagai ruang untuk mempererat kebersamaan, membangun solidaritas, dan mengembangkan potensi generasi muda melalui berbagai kegiatan sosial, olahraga, hiburan, serta kegiatan kemasyarakatan.
-Dengan semangat kebersamaan dan gotong royong, kami percaya bahwa pemuda memiliki peran penting dalam menciptakan lingkungan yang lebih aktif, kreatif, dan positif. Melalui setiap kegiatan, FRKI berusaha menjadi tempat bagi generasi muda untuk berkarya, belajar, berorganisasi, dan memberikan manfaat nyata bagi masyarakat.
-Bersama, bergerak, berkarya, dan membangun Kebon Indah yang lebih baik.
-    </p>
-  </div>
-</section>
-
-<!-- KEGIATAN -->
- 
-<section id="kegiatan" class="kegiatan">
-  <div class="container">
-    <h2>Kegiatan Terbaru</h2>
-
-    <div class="grid-3">
-
-      <div class="card scroll">
-        <div class="img-box">
-          <img src="asset/bendera.JPG" alt="Pawai Bendera FRKI">
-          <span class="badge">📅 17 Agustus 2025</span>
-        </div>
-        <h3>PAWAI BENDERA PANJANG JASA</h3>
-        <p>Pawai bendera Merah Putih bersama Pemuda FRKI setiap 17 Agustus.</p>
-      </div>
-
-      <div class="card">
-        <div class="img-box">
-          <img src="asset/bukber.jpg" alt="Bukber FRKI">
-          <span class="badge">📅 8 Maret 2025</span>
-        </div>
-        <h3>BUKBER PANJANG</h3>
-        <p>Buka puasa bersama warga Kebon Indah + santunan anak yatim.</p>
-      </div>
-
-      <div class="card">
-        <div class="img-box">
-          <img src="asset/fun.webp" alt="Fun Minisoccer FRKI">
-          <span class="badge">📅 2 Juni 2024</span>
-        </div>
-        <h3>FUN MINISOCCER FRKI</h3>
-        <p>Kegiatan olahraga dan kolaborasi antar pemuda.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- GALERI -->
-<section id="galeri" class="galeri">
-  <div class="container">
-    <h2>Galeri Kegiatan</h2>
-
-    <div class="grid-gallery">
-      <img src="asset/galeri1.jpg" alt="Galeri FRKI 1">
-      <img src="asset/galeri2.jpg" alt="Galeri FRKI 2">
-      <img src="asset/galeri3.jpg" alt="Galeri FRKI 3">
-      <img src="asset/galeri4.jpg" alt="Galeri FRKI 4">
-      <img src="asset/galeri7.jpeg" alt="Galeri FRKI 5">
-      <img src="asset/galeri5.jpeg" alt="Galeri FRKI 6">
-    </div>
-  </div>
-</section>
-
-<!-- VIDEO DOKUMENTASI -->
-
-
-<section id="video" class="video-section">
-  <div class="container">
-    <h2>Video Dokumentasi Terbaru</h2>
-    <p class="video-desc">
-      Dokumentasi kegiatan Forum Remaja Kebon Indah.
+      Pawai bendera Merah Putih bersama Pemuda FRKI
+      dan Karnaval Bersama RW 01/07
     </p>
 
-    <div class="video-grid">
+  </div>
 
-      <div class="video-box">
-        <video class="video-item" muted autoplay loop playsinline>
-          <source src="asset/video/kegiatan1.mp4" type="video/mp4">
-        </video>
-        <p>Pawai Obor 1 Muharram</p>
-      </div>
+  <!-- CARD 2 -->
 
-      <div class="video-box">
-        <video class="video-item" muted autoplay loop playsinline>
-          <source src="asset/video/kegiatan2.mp4" type="video/mp4">
-        </video>
-        <p>Bukber Panjang FRKI</p>
-      </div>
+  <div class="card scroll-animate">
 
-      <div class="video-box">
-    <video class="video-item" muted autoplay loop playsinline>
-        <source src="asset/video/kegiatan3.mp4" type="video/mp4">
-    </video>
-    <p>17 Agustus 2025</p>
-</div>
+    <div class="img-box">
+
+      <img
+        src="asset/bukber.jpg"
+        alt="Bukber FRKI">
+
+      <span class="badge">
+        📅 8 Maret 2025
+      </span>
 
     </div>
+
+    <h3>
+      BUKBER PANJANG
+    </h3>
+
+    <p>
+      Buka puasa bersama warga Kebon Indah
+      dan santunan anak yatim.
+    </p>
+
+  </div>
+  <!-- CARD 3 -->
+
+  <div class="card scroll-animate">
+
+    <div class="img-box">
+
+      <img
+        src="asset/fun.webp"
+        alt="Fun Minisoccer FRKI">
+
+      <span class="badge">
+        📅 2 Juni 2024
+      </span>
+
+    </div>
+
+    <h3>
+      FUN MINISOCCER FRKI
+    </h3>
+
+    <p>
+      Kegiatan olahraga dan kolaborasi
+      antar pemuda.
+    </p>
+
+  </div>
+
+</div>
   </div>
 </section>
 
-<!-- POPUP VIDEO -->
-<div id="videoModal" class="video-modal">
+<!-- =====================================================
+     GALERI
+===================================================== -->
 
-  <span class="video-close">&times;</span>
+<section
+  id="galeri"
+  class="galeri">
 
-  <video id="popupVideo" controls>
-    <source src="" type="video/mp4">
-  </video>
+  <div class="container">
+<h2>
+  Galeri Kegiatan Terbaru
+</h2>
+<div class="grid-gallery">
+  <img
+    src="asset/galeri1.jpg"
+    alt="Galeri FRKI 1">
+
+  <img
+    src="asset/galeri2.jpg"
+    alt="Galeri FRKI 2">
+
+  <img
+    src="asset/galeri3.jpg"
+    alt="Galeri FRKI 3">
+
+  <img
+    src="asset/galeri6.jpg"
+    alt="Galeri FRKI 4">
+
+  <img
+    src="asset/galeri4.jpg"
+    alt="Galeri FRKI 5">
+
+  <img
+    src="asset/galeri7.jpeg"
+    alt="Galeri FRKI 6">
 
 </div>
-<!-- LIGHTBOX -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
+  </div>
+</section>
+  </div>
+</section>
 
-  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+<!-- =====================================================
+     LIGHTBOX
+===================================================== -->
+
+<div
+  id="lightbox"
+  class="lightbox">
+
+  <span class="close">
+    &times;
+  </span>
+
+<img
+ class="lightbox-img"
+ id="lightbox-img"
+ src=""
+ alt="">
 
 </div>
 
-<!-- FOOTER -->
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
 <footer id="kontak">
+
   <div class="container footer">
 
-    <div class="footer-box">
-      <h3>Forum Remaja Kebon Indah</h3>
-      <p>Wadah pemuda untuk berkembang dan berkarya.</p>
-    </div>
+<!-- ABOUT -->
 
-    <div class="footer-box footer-contact">
+<div class="footer-box">
 
-  <h4>CONTACT US</h4>
+  <h3>
+    Forum Remaja Kebon Indah
+  </h3>
+
+  <p>
+    Wadah pemuda untuk berkembang,
+    berkarya, dan memberikan manfaat
+    bagi masyarakat RT 003.
+  </p>
+
+</div>
+
+<!-- CONTACT -->
+
+<div class="footer-box footer-contact">
+
+  <h4>
+    CONTACT US
+  </h4>
 
   <div class="contact-item">
+
     <i class="fa-regular fa-envelope"></i>
+
     <div>
-      <span>Email</span>
-      <p>frki_003@gmail.com</p>
+
+      <span>
+        Email
+      </span>
+
+      <p>
+        frki_003@gmail.com
+      </p>
+
     </div>
+
   </div>
 
   <div class="contact-item">
+
     <i class="fa-brands fa-whatsapp"></i>
+
     <div>
-      <span>WhatsApp</span>
-      <p>0856-9457-7695</p>
+
+      <span>
+        WhatsApp
+      </span>
+
+      <p>
+        0856-9457-7695
+      </p>
+
     </div>
+
   </div>
 
 </div>
 
-    <div class="footer-box">
-      <h4>Lokasi Sekretariat</h4>
+<!-- MAP -->
 
-      <div class="footer-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d247.89572570199311!2d106.627844562925!3d-6.219929043377556!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1782846318042!5m2!1sid!2sid"
-          loading="lazy"
-          allowfullscreen>
-        </iframe>
-      </div>
+<div class="footer-box">
 
-    </div>
+  <h4>
+    Lokasi Sekretariat
+  </h4>
+
+
+  <div class="footer-map">
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d247.89572570199311!2d106.627844562925!3d-6.219929043377556!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1782846318042!5m2!1sid!2sid"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
 
   </div>
+
+</div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
 
   <div class="copyright">
-    © Copyright 2026 frki003
+
+© Copyright 2026 FRKI
+
   </div>
+
 </footer>
 
-<!-- SCRIPT -->
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
 <script src="script.js"></script>
 
 </body>
+
 </html>

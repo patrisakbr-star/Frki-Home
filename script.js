@@ -201,3 +201,29 @@ if (e.key === "Escape") {
 ```
 
 });
+
+
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+
+if (menuToggle && menu) {
+  menuToggle.addEventListener("click", function () {
+    const isOpen = menu.classList.toggle("show");
+
+    menuToggle.classList.toggle("active", isOpen);
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Tutup menu" : "Buka menu"
+    );
+  });
+
+  menu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      menu.classList.remove("show");
+      menuToggle.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Buka menu");
+    });
+  });
+}

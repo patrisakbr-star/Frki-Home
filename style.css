@@ -184,6 +184,92 @@ transform: translateY(-2px);
 box-shadow: 0 5px 15px rgba(98, 40, 215, 0.25);
 }
 
+
+/* TOMBOL HAMBURGER */
+.menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  padding: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 3px;
+  background: currentColor;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* Warna garis mengikuti warna teks navbar */
+.navbar .menu-toggle {
+  color: #ffffff;
+}
+
+/* Animasi menjadi tanda X */
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* TAMPILAN MOBILE */
+@media screen and (max-width: 600px) {
+  .nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav-wrapper .menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 0;
+  }
+
+  .nav-wrapper .menu.show {
+    display: flex;
+  }
+
+  .nav-wrapper .menu a {
+    display: block;
+    width: 100%;
+    padding: 13px 15px;
+    text-align: center;
+  }
+
+  .nav-wrapper .menu a::after {
+    display: none;
+  }
+}
+
+
 /* ================= HERO ================= */
 
 .hero {
@@ -929,4 +1015,154 @@ max-height: 80%;
 top: 15px;
 right: 20px;
 font-size: 35px;
+}
+}
+
+
+/* ==========================================
+   IOS SAFARI PATCH - FRKI
+========================================== */
+
+/* Cegah lebar halaman melampaui layar */
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Perhitungan ukuran lebih konsisten */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  max-width: 100%;
+}
+
+.nav-wrapper {
+  min-width: 0;
+}
+
+.logo,
+.logo span,
+.menu,
+.menu a,
+.ig-btn {
+  min-width: 0;
+}
+
+.logo span {
+  overflow-wrap: anywhere;
+}
+
+/* Hero: fallback untuk Safari */
+.hero {
+  height: 85vh;
+  height: 85svh;
+  min-height: 480px;
+  max-height: 760px;
+}
+
+.hero-content {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.hero h1,
+.hero h2,
+.hero p {
+  overflow-wrap: break-word;
+}
+
+/* Kartu kegiatan */
+.grid-3,
+.grid-gallery,
+.footer {
+  min-width: 0;
+}
+
+.card,
+.img-box {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.card img,
+.img-box img,
+.grid-gallery img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Footer dan peta */
+.footer-box,
+.footer-map {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.footer-map iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* iPhone */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: 480px;
+    height: 85vh;
+    height: 85svh;
+  }
+
+  .grid-3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grid-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
